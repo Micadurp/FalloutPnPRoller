@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FalloutPnPRoller</string>
+    <string name="dice_roller">Roll dat dice</string>
 </resources>
