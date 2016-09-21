@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground">
+
+    <include layout="@layout/main_menu"/>
 
     <TextView
-        android:id="@+id/caption"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
-        android:textSize="36dp"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:gravity="center_horizontal"
-        android:layout_alignParentBottom="true"
-        android:text="@string/dice_roller" />
+        android:textColor="@color/colorPrimaryText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/character_name"
+        android:id="@+id/textView"
+        android:layout_above="@+id/menuLayout"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
