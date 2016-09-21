@@ -17,4 +17,102 @@
         android:layout_above="@+id/menuLayout"
         android:layout_centerHorizontal="true" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorPrimaryText"
+                android:text="@string/roll_button_text"
+                android:id="@+id/rollButton"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryText"
+                android:text="roll"
+                android:id="@+id/effectValue"
+                android:layout_below="@+id/rollButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:ems="5"
+                android:id="@+id/skillValue"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:ems="5"
+                android:id="@+id/skillType"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/skillValue"
+                android:layout_toEndOf="@+id/skillValue" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:ems="5"
+                android:id="@+id/diceValue"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:ems="5"
+                android:id="@+id/plusValue"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/minusValue"
+                android:layout_toStartOf="@+id/minusValue" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:ems="5"
+                android:id="@+id/minusValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
 </RelativeLayout>
