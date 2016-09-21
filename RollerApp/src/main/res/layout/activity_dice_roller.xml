@@ -22,11 +22,11 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
 
             <Button
                 android:layout_width="wrap_content"
@@ -47,71 +47,101 @@
                 android:id="@+id/effectValue"
                 android:layout_below="@+id/rollButton"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="30dp"/>
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="50dp">
+            android:layout_alignParentTop="true">
 
-            <EditText
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/colorPrimaryText"
-                android:inputType="number"
-                android:ems="5"
-                android:id="@+id/skillValue"
-                android:layout_centerVertical="true"
+                android:text="@string/skill_text"
+                android:id="@+id/skillText"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimaryText"
                 android:inputType="number"
-                android:ems="5"
-                android:id="@+id/skillType"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/skillValue"
-                android:layout_toEndOf="@+id/skillValue" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimaryText"
-                android:inputType="number"
-                android:ems="5"
-                android:id="@+id/diceValue"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"/>
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimaryText"
-                android:inputType="number"
-                android:ems="5"
-                android:id="@+id/plusValue"
-                android:layout_alignParentTop="true"
-                android:layout_toLeftOf="@+id/minusValue"
-                android:layout_toStartOf="@+id/minusValue" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimaryText"
-                android:inputType="number"
-                android:ems="5"
-                android:id="@+id/minusValue"
-                android:layout_alignParentTop="true"
+                android:maxLength="2"
+                android:ems="2"
+                android:id="@+id/skillValue"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignBaseline="@+id/skillText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryText"
+                android:text="@string/plus_text"
+                android:id="@+id/plusText"
+                android:layout_below="@+id/skillText"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:maxLength="2"
+                android:ems="2"
+                android:id="@+id/plusValue"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@+id/plusText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryText"
+                android:text="@string/minus_text"
+                android:id="@+id/minusText"
+                android:layout_below="@+id/plusText"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:maxLength="2"
+                android:ems="2"
+                android:id="@+id/minusValue"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@+id/minusText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryText"
+                android:text="@string/dice_roll_text"
+                android:id="@+id/diceText"
+                android:layout_below="@+id/minusText"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:inputType="number"
+                android:maxLength="2"
+                android:ems="2"
+                android:id="@+id/diceValue"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@+id/diceText"/>
         </RelativeLayout>
     </RelativeLayout>
 

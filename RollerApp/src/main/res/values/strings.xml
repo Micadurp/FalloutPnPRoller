@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">FalloutPnPRoller</string>
-    <string name="dice_roller">This is text</string>
     <string name="character_name">Speedwagon Speedwagon</string>
     <string name="menu_button_1">Status</string>
     <string name="menu_button_2">S.P.E.C.I.A.L</string>
@@ -8,4 +7,9 @@
     <string name="menu_button_4">Skills</string>
     <string name="menu_button_5">General</string>
     <string name="roll_button_text">Roll</string>
+    <string name="skill_text">Skill</string>
+    <string name="skill_type_text">Temp</string>
+    <string name="plus_text">Plus</string>
+    <string name="minus_text">Minus</string>
+    <string name="dice_roll_text">Dice</string>
 </resources>
