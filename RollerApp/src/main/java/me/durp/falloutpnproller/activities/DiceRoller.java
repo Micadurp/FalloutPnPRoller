@@ -1,10 +1,7 @@
 package me.durp.falloutpnproller.activities;
 
-import android.app.Activity;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,15 +10,15 @@ import me.durp.falloutpnproller.R;
 /**
  * Created by enicdey on 9/20/16.
  */
-public class DiceRoller extends Activity {
+public class DiceRoller extends MainActivity {
 
     @Override
     protected void onCreate(Bundle pSavedInstanceState) {
         super.onCreate(pSavedInstanceState);
         setContentView(R.layout.activity_dice_roller);
+        super.initalize();
 
         Button rollButton = (Button) findViewById(R.id.rollButton);
-
         rollButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 calculateEffect();
