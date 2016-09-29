@@ -1,4 +1,4 @@
-package me.durp.falloutpnproller;
+package me.durp.falloutpnproller.activities;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+
+import me.durp.falloutpnproller.R;
 
 /**
  * Created by enicdey on 9/20/16.

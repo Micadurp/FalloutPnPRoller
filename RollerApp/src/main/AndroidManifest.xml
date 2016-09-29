@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="me.durp.falloutpnproller.DiceRoller"
+            android:name=".activities.DiceRoller"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
             <intent-filter>

@@ -1,6 +1,4 @@
-package me.durp.falloutpnproller;
-
-import android.speech.SpeechRecognizer;
+package me.durp.falloutpnproller.enums;
 
 /**
  * Created by enicdey on 9/29/16.
