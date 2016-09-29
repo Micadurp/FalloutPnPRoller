@@ -6,6 +6,8 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:textAppearance">@style/CustomTextAppearance</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
