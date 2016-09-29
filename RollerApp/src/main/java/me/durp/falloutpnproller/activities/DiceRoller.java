@@ -16,7 +16,7 @@ public class DiceRoller extends MainActivity {
     protected void onCreate(Bundle pSavedInstanceState) {
         super.onCreate(pSavedInstanceState);
         setContentView(R.layout.activity_dice_roller);
-        super.initalize();
+        super.menuInitialize();
 
         Button rollButton = (Button) findViewById(R.id.rollButton);
         rollButton.setOnClickListener(new View.OnClickListener() {

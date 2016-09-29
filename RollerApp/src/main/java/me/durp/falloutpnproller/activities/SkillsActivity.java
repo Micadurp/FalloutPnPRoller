@@ -13,7 +13,7 @@ public class SkillsActivity extends MainActivity {
     protected void onCreate(Bundle pSavedInstanceState) {
         super.onCreate(pSavedInstanceState);
         setContentView(R.layout.activity_skills);
-        super.initalize();
+        super.menuInitialize();
 
 
     }

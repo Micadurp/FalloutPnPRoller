@@ -13,7 +13,7 @@ import me.durp.falloutpnproller.R;
  */
 public abstract class MainActivity extends Activity {
 
-    protected void initalize() {
+    protected void menuInitialize() {
 
         Button SpecialsButton = (Button) findViewById(R.id.menuButton3);
         SpecialsButton.setOnClickListener(new View.OnClickListener() {
